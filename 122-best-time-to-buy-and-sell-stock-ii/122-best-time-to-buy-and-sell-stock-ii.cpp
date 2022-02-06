@@ -5,15 +5,15 @@ public:
       for(int i=0; i<n;){
            if(number==0){
                if(i==n-1){
-                   
+                   i++;
                }
              else  if(nums[i]>=nums[i+1]){
-
+                     i++;
                 }
                else{ number++;
-                   
-                      cost+=nums[i]; }
-               i++;
+                  cost+=nums[i];
+                   i++; }
+               
           }
           else{
                 if(i==n-1){
