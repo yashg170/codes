@@ -7,12 +7,12 @@ public:
                if(i==n-1){
                    
                }
-             else  if(nums[i]>=nums[i+1]){
-
-                }
-               else{ number++;
+             else  if(nums[i]<nums[i+1]){
+                     number++;
                    
-                      cost+=nums[i]; }
+                      cost+=nums[i];
+                }
+               
                i++;
           }
           else{
