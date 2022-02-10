@@ -20,6 +20,7 @@ public:
             
             s1.pop();
         }
+        
         reverse(res.begin(),res.end());
         return res;
     }
