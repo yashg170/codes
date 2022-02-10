@@ -1,27 +1,25 @@
 class Solution {
 public:
-    string removeDuplicates(string s, int k) {
-  string ans = "";
-      stack < pair<char, int> > st;
-      int n = s.size();
-      for(int i = 0; i <= n;){
-         char x = s[i];
-         if(!st.empty() && st.top().second == k)st.pop();
-         if(i == n)break;
-         if(st.empty() || st.top().first != x){
-            st.push({x, 1});
-            i++;
-         } else {
-            st.top().second++;
-            i++;
-         }
-      }
-      while(!st.empty()){
-         pair <char, int> temp = st.top();
-         while(temp.second--) ans += temp.first;
-         st.pop();
-      }
-      reverse(ans.begin(), ans.end());
-      return ans;
+    string removeDuplicates(string &s, int k) {
+   stack<pair<char,int> >s1; string res="";
+        for(int i=0;i<s.length(); i++){
+            if(!s1.empty()){
+                if(s[i]==s1.top().first){ s1.top().second+=1; ;}
+                else{   s1.push({s[i],1});}
+            }
+            else{ s1.push({s[i],1}); }
+            if(s1.top().second==k){ s1.pop(); 
+                      }
+            
+            
+        }
+        while(!s1.empty()){
+             pair <char, int> temp = s1.top();
+         while(temp.second--) res+= temp.first;
+            
+            s1.pop();
+        }
+        reverse(res.begin(),res.end());
+        return res;
     }
 };
