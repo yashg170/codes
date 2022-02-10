@@ -1,7 +1,7 @@
 class Solution {
 public:
     string removeDuplicates(string s) {
-        stack<char>s1; string res; stack<char>s2;
+        stack<char>s1; string res; 
     int n=s.length();
         for(int i=0; i<n; i++ ){
             if(!s1.empty()){
