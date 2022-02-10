@@ -14,8 +14,9 @@ public:
             
         }
         while(!s1.empty()){
-          for(int i=0; i<s1.top().second; i++)  
+          for(int i=0; i<s1.top().second; i++){  
               res+= s1.top().first;
+          }
             
             s1.pop();
         }
