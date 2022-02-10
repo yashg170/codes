@@ -14,8 +14,8 @@ public:
             
         }
         while(!s1.empty()){
-             pair <char, int> temp = s1.top();
-         while((s1.top()).second--) res+= temp.first;
+            
+         while((s1.top()).second--) res+= (s1.top()).first;
             
             s1.pop();
         }
