@@ -11,8 +11,7 @@ public:
         sum[0]=0; 
         int i=0,j=0;int max1=100000;
         while(j<n){
-            if(i>j){ j=i;}
-             a=sum[j+1]-sum[i];
+           a=sum[j+1]-sum[i];
             if(a<target){
             
                 j++;
