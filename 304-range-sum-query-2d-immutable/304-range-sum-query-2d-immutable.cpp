@@ -1,7 +1,7 @@
 class NumMatrix {
 public:
     
-     int sum[1000][1000];
+     int sum[300][300];
     NumMatrix(vector<vector<int>>& matrix) {
     int n=matrix.size(); int  m=matrix[0].size();
        for(int i=0; i<=n; i++){
