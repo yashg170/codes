@@ -11,7 +11,8 @@ public:
         sum[0]=0; 
         int i=0,j=0;int max1=100000;
         while(j<n){
-           a=sum[j+1]-sum[i];
+            if(i>j){ j=i;}
+             a=sum[j+1]-sum[i];
             if(a<target){
             
                 j++;
@@ -21,7 +22,7 @@ public:
                      i=j;
                      j++;
         }
-        cout<<a<<" ";
+       
     }
    if(max1==100000)return 0;
                   return max1;
