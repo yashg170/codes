@@ -9,9 +9,9 @@ presum[0]=nums[0];
 for(int i=1;i<n;i++) presum[i]=presum[i-1]+nums[i];
 
 deque<pair<long long int,int>>dq;
-dq.push_back({0,-1}); // This is because in the starting, the deque is empty so if we didn't include this may miss out on things when the nums[0] itself is >=k
+dq.push_back({0,-1}); 
 
-int mini = INT_MAX; // The maximum possible signed integer
+int mini = INT_MAX; 
 for(int i=0;i<n;i++)
 {
 	long long int val = presum[i];
