@@ -19,7 +19,7 @@ for(int i=0;i<n;i++)
 	{
 		dq.pop_back();
 	}
-	dq.push_back({presum[i],i});
+	dq.push_back({presum[i],i});                       
 	while(dq.size() && val-dq[0].first>=k)
 	{
 		mini = min(mini, i-dq[0].second);
