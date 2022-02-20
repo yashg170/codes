@@ -8,6 +8,7 @@ public:
              if(nums[j]+nums[i]==target){ temp.push_back(i); temp.push_back(j);
                                            break;}
          }
+        if(!temp.empty()){ break;}
     }
         return temp;
     }
