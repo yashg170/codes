@@ -8,8 +8,9 @@ public:
             if(count<=citations[i] ){
               a=count;
             count++;
+                i--;
             }
-            i--;
+           else{break;}
      }
         return a;
     }
